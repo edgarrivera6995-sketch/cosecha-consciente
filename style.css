@@ -307,7 +307,123 @@ nav a.activo {
 .ods-tarjeta:hover {
     transform: translateY(-5px);
 }
+/* ========================================== */
+/* ESTILOS DEL APARTADO DE REPORTE Y QR       */
+/* ========================================== */
+.seccion-reportar {
+    padding: 70px 8%;
+    background-color: #fffaf0; 
+}
 
+.reportar-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.reportar-texto {
+    flex: 1;
+    min-width: 320px;
+}
+
+.reportar-etiqueta {
+    color: #d89b00; 
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.reportar-texto h2 {
+    color: #145a20; 
+    font-size: 32px;
+    margin: 10px 0 20px;
+}
+
+.reportar-texto p {
+    color: #444;
+    line-height: 1.6;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.descripcion-sistema {
+    font-size: 14px;
+    color: #666 !important;
+    margin-bottom: 30px !important;
+}
+
+.btn-reportar {
+    display: inline-block;
+    padding: 14px 30px;
+    background: #d89b00;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(216, 155, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn-reportar:hover {
+    background: #145a20;
+    box-shadow: 0 5px 15px rgba(20, 90, 32, 0.3);
+    transform: translateY(-2px);
+}
+
+.reportar-qr-box {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.poster-calle {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    max-width: 290px;
+    text-align: center;
+    border: 3px dashed #145a20; 
+}
+
+.poster-header {
+    font-weight: bold;
+    color: #145a20;
+    font-size: 14px;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+
+.qr-grafico {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.qr-grafico img {
+    display: block;
+    width: 150px;
+    height: 150px;
+}
+
+.poster-footer p {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.marca-proyecto {
+    font-size: 11px;
+    color: #d89b00;
+    font-weight: bold;
+    display: block;
+}
 .tarjeta-hambre {
     border-left: 6px solid #d80027; /* Rojo característico de ODS 2 */
 }
