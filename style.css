@@ -1,0 +1,581 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fffaf0;
+    color: #222;
+}
+
+.navbar {
+    background: white;
+    padding: 15px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    display: flex;
+    gap: 3px;
+    align-items: center;
+}
+
+.logo span {
+    font-size: 40px;
+}
+
+.logo h2 {
+    color: #145a20;
+}
+
+.logo p {
+    color: #d89b00;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+    position: relative;
+}
+
+nav a:hover,
+nav a.activo {
+    color: #145a20;
+}
+
+.btn-menu {
+    background: #d89b00;
+    color: white !important;
+    padding: 12px 22px;
+    border-radius: 30px;
+}
+
+.hero {
+    min-height: 90vh;
+    padding: 90px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.impactante {
+    background:
+    linear-gradient(90deg, rgba(255,250,240,0.97) 35%, rgba(255,250,240,0.45)),
+    url("https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=1600&q=80");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-texto {
+    max-width: 650px;
+}
+
+.etiqueta {
+    display: inline-block;
+    background: #145a20;
+    color: white;
+    padding: 9px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 65px;
+    line-height: 1;
+    color: #123;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #d89b00;
+}
+
+.hero p {
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.botones {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    border: none;
+    padding: 14px 28px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn-amarillo {
+    background: #d89b00;
+    color: white;
+}
+
+.btn-verde {
+    background: #145a20;
+    color: white;
+}
+
+.btn-rojo {
+    background: #b00020;
+    color: white;
+}
+
+.hero-card {
+    background: white;
+    max-width: 350px;
+    padding: 35px;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.18);
+    border-top: 8px solid #d89b00;
+}
+
+.hero-card h3 {
+    color: #145a20;
+    margin-bottom: 15px;
+}
+
+.hero-card h2 {
+    margin-bottom: 15px;
+}
+
+.seccion {
+    padding: 85px 8%;
+}
+
+.titulo {
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.subtitulo {
+    color: #d89b00;
+    font-weight: bold;
+}
+
+.titulo h2 {
+    color: #145a20;
+    font-size: 42px;
+    margin: 12px 0;
+}
+
+.titulo p {
+    color: #555;
+    font-size: 19px;
+    line-height: 1.7;
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.tarjeta {
+    background: white;
+    padding: 35px;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.10);
+    text-align: center;
+    border-bottom: 7px solid #d89b00;
+    transition: 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-12px);
+}
+
+.tarjeta span {
+    font-size: 50px;
+}
+
+.tarjeta h3 {
+    color: #145a20;
+    margin: 15px 0;
+}
+
+.tarjeta p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.bloque-frase {
+    background: linear-gradient(135deg, #145a20, #2e7d32);
+    color: white;
+    text-align: center;
+    padding: 70px 10%;
+}
+
+.bloque-frase h2 {
+    font-size: 35px;
+}
+
+.impacto {
+    background: #fff3cd;
+}
+
+.contador-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+.seccion-ods {
+    padding: 60px 8%;
+    background-color: #ffffff;
+}
+
+.ods-titulo {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.ods-subtitulo {
+    color: #d89b00;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.seccion-ods h2 {
+    color: #145a20;
+    font-size: 32px;
+    margin-top: 10px;
+}
+
+.seccion-ods p {
+    color: #555;
+    max-width: 600px;
+    margin: 15px auto 0;
+    line-height: 1.6;
+}
+
+.ods-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.ods-tarjeta {
+    background: #fffaf0;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    max-width: 450px;
+    flex: 1;
+    min-width: 280px;
+    transition: transform 0.3s ease;
+}
+
+.ods-tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+.tarjeta-hambre {
+    border-left: 6px solid #d80027; /* Rojo característico de ODS 2 */
+}
+
+.tarjeta-consumo {
+    border-left: 6px solid #d89b00; /* Dorado/Naranja de ODS 12 */
+}
+
+.ods-tarjeta h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.tarjeta-hambre h3 {
+    color: #d80027;
+}
+
+.tarjeta-consumo h3 {
+    color: #d89b00;
+}
+
+.ods-tarjeta p {
+    color: #444;
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: left;
+}
+.contador {
+    background: white;
+    padding: 35px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.10);
+}
+
+.contador h3 {
+    font-size: 55px;
+    color: #d89b00;
+}
+
+.contador p {
+    color: #145a20;
+    font-weight: bold;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.galeria-grid img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.galeria-grid img:hover {
+    transform: scale(1.04);
+}
+
+.llamado {
+    background: #d89b00;
+    color: white;
+    text-align: center;
+    padding: 70px 8%;
+}
+
+.llamado h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.llamado p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.hero-donaciones {
+    padding: 90px 8%;
+    color: white;
+    background:
+    linear-gradient(rgba(20,90,32,0.88), rgba(20,90,32,0.88)),
+    url("https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=1600&q=80");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-donaciones h1 {
+    font-size: 55px;
+    margin: 15px 0;
+}
+
+.hero-donaciones p {
+    font-size: 20px;
+    max-width: 800px;
+    line-height: 1.7;
+}
+
+.donacion-layout {
+    padding: 70px 8%;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 35px;
+}
+
+.info-donacion,
+.form-card {
+    background: white;
+    padding: 35px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+.info-donacion h2,
+.form-card h2 {
+    color: #145a20;
+    margin-bottom: 20px;
+}
+
+.info-box {
+    background: #f6f8ef;
+    padding: 20px;
+    border-radius: 18px;
+    margin-bottom: 20px;
+    border-left: 6px solid #d89b00;
+}
+
+.info-box h3 {
+    color: #145a20;
+    margin-bottom: 8px;
+}
+
+.info-box p {
+    line-height: 1.6;
+}
+
+.mini-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+}
+
+.mini-grid div {
+    background: #fff3cd;
+    padding: 15px;
+    border-radius: 15px;
+    font-weight: bold;
+    color: #145a20;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 6px;
+}
+
+form input,
+form textarea,
+form select {
+    padding: 13px;
+    border-radius: 12px;
+    border: 2px solid #ddd;
+    font-size: 16px;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+    outline: none;
+    border-color: #d89b00;
+}
+
+form button {
+    margin-top: 25px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 300;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.65);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.modal-contenido {
+    background: white;
+    padding: 35px;
+    border-radius: 25px;
+    max-width: 550px;
+    width: 100%;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.30);
+}
+
+.modal-contenido h2 {
+    color: #145a20;
+    margin-bottom: 15px;
+}
+
+.modal-contenido p {
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.modal-botones {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    line-height: 1.7;
+}
+
+.animar {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.9s ease;
+}
+
+.animar.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 900px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .donacion-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-donaciones h1 {
+        font-size: 42px;
+    }
+}

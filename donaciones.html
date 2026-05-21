@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donaciones | Cosecha Consciente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">
+        <img src="logooo2.png" alt="Logo Cosecha Consciente">
+        <div>
+            <h2>Cosecha Consciente</h2>
+            <p>ODS 2</p>
+        </div>
+    </div>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="index.html#problema">Problema</a>
+        <a href="index.html#galeria">Galería</a>
+        <a href="donaciones.html" class="activo">Donaciones</a>
+    </nav>
+</header>
+
+<section class="hero-donaciones">
+    <div class="animar">
+        <span class="etiqueta">Juntos podemos ayudar</span>
+        <h1>Centro de Donaciones</h1>
+        <p>
+            Registra lo que deseas donar. Todas las donaciones se reciben en la Universidad CUCEI
+            de la Universidad de Guadalajara.
+        </p>
+    </div>
+</section>
+
+<section class="donacion-layout">
+    <div class="info-donacion animar">
+        <h2>Información de recepción</h2>
+
+        <div class="info-box">
+            <h3>📍 Lugar</h3>
+            <p>CUCEI · Universidad de Guadalajara</p>
+            <p>Blvd. Marcelino García Barragán #1421, esquina Calzada Olímpica, C.P. 44430, Guadalajara, Jalisco, México.</p>
+        </div>
+
+        <div class="info-box">
+            <h3>🕘 Horario</h3>
+            <p>Lunes a viernes de 9:00 a.m. a 3:00 p.m.</p>
+        </div>
+
+        <div class="info-box">
+            <h3>👤 Responsable</h3>
+            <p>José Angel Oceguera Reyes</p>
+            <p>Teléfono: 3321218321</p>
+        </div>
+
+        <h2>¿Qué puedes donar?</h2>
+
+        <div class="mini-grid">
+            <div>🥫 Alimentos no perecederos</div>
+            <div>🍚 Arroz, frijol, pasta o avena</div>
+            <div>🧼 Higiene personal</div>
+            <div>🧴 Productos de limpieza</div>
+            <div>👕 Ropa en buen estado</div>
+            <div>💵 Apoyo económico</div>
+        </div>
+    </div>
+
+    <div class="form-card animar">
+        <h2>Registrar donación</h2>
+        <p>Llena el formulario y confirma tu apoyo.</p>
+
+        <form id="formDonacion">
+            <label>Nombre completo</label>
+            <input type="text" id="nombre" placeholder="Ejemplo: Juan Pérez" required>
+
+            <label>Teléfono / WhatsApp</label>
+            <input type="tel" id="telefono" placeholder="Ejemplo: 3312345678" required>
+
+            <label>Tipo de donación</label>
+            <select id="tipo" required>
+                <option value="">Selecciona una opción</option>
+                <option>Alimentos no perecederos</option>
+                <option>Granos y productos básicos</option>
+                <option>Productos de higiene personal</option>
+                <option>Productos de limpieza</option>
+                <option>Ropa en buen estado</option>
+                <option>Apoyo económico</option>
+                <option>Otra donación</option>
+            </select>
+
+            <label>Describe qué deseas donar</label>
+            <textarea id="descripcion" rows="4" placeholder="Ejemplo: 5 latas de atún, 2 bolsas de arroz, ropa..." required></textarea>
+
+            <label>Cantidad aproximada</label>
+            <input type="text" id="cantidad" placeholder="Ejemplo: 3 kg, 5 piezas, 2 bolsas..." required>
+
+            <label>Fecha estimada de entrega</label>
+            <input type="date" id="fecha" required>
+
+            <button type="submit" class="btn btn-verde">Confirmar donación</button>
+        </form>
+    </div>
+</section>
+
+<div class="modal" id="modalConfirmacion">
+    <div class="modal-contenido">
+        <h2>Confirmar donación</h2>
+        <p id="resumenDonacion"></p>
+
+        <div class="modal-botones">
+            <button class="btn btn-verde" id="btnWhatsApp">Enviar por WhatsApp</button>
+            <button class="btn btn-rojo" onclick="cerrarModal()">Cancelar</button>
+        </div>
+    </div>
+</div>
+
+<section class="llamado">
+    <h2>Cada donación cuenta</h2>
+    <p>Tu apoyo puede convertirse en alimento, esperanza y solidaridad.</p>
+</section>
+
+<footer>
+    <p>Campaña ODS 2 · Hambre Cero</p>
+    <p>CUCEI · Universidad de Guadalajara</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
